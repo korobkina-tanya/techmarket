@@ -12,8 +12,12 @@
   <header>
     <img src="../img/logo.svg" width="220" height="68" alt="ТЕХНОМАРТ">
     <ul>
-      <li><a href="blank.html">Поиск</a><img src="../img/icon-search.svg" width="17" height="17" alt="поиск"></li>
-      <li><a href="blank.html">Закладки</a><img src="../img/icon-bookmark.svg" width="14" height="16" alt="закладки"></li>
+      <li>
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
+          <img src="../img/icon-search.svg" width="17" height="17" alt="поиск">
+          <input type="text" name="search" value="Поиск">
+        </form>
+      </li>      <li><a href="blank.html">Закладки</a><img src="../img/icon-bookmark.svg" width="14" height="16" alt="закладки"></li>
       <li><a href="blank.html">Корзина</a><img src="../img/icon-cart.svg" width="15" height="15" alt="корзина"></li>
       <li><a href="blank.html">Оформить заказ</a></li>
     </ul>
@@ -34,7 +38,12 @@
     <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 
     <div class="login-button-group">
-      <a href="blank.html"><img src="../img/icon-user.svg" alt="пользователь"><span>Равшан Джамшутович</span><img src="../img/icon-login.svg" width="20" height="17" alt="стрелочка"></a>
+      <a href="blank.html">
+        <img src="../img/icon-user.svg" alt="пользователь">
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <label><input type="text" name="login" value="Равшан Джамшутович"></label>
+        <img src="../img/icon-login.svg" width="20" height="17" alt="стрелочка">
+      </a>
     </div>
 
     <nav>
@@ -80,35 +89,55 @@
       </div>
   
       <div>
-        <h4>Производители:</h4>
-        <ul>
-          <li><img src="../img/checkbox-on.svg" alt="галочка">BOSCH</li>
-          <li>ИНТЕРСКОЛ<img src="../img/checkbox-off.svg" alt="галочка"></li>
-          <li>MAKIta<img src="../img/checkbox-on.svg" alt="галочка"></li>
-          <li>Dewalt<img src="../img/checkbox-off.svg" alt="галочка"></li>
-          <li>Hitachi<img src="../img/checkbox-off.svg" alt="галочка"></li>
-        </ul>
+        <h1>Производители:</h1>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="checkbox" name="Manufacturer" id="Manufacturer" checked>
+          <label for="subscribe-field">BOSCH</label>
+          <br>
+          <input type="checkbox" name="Manufacturer" id="Manufacturer">
+          <label for="subscribe-field">ИНТЕРСКОЛ</label>
+          <br>
+          <input type="checkbox" name="Manufacturer" id="Manufacturer" checked>
+          <label for="subscribe-field">MAKIta</label>
+          <br>
+          <input type="checkbox" name="Manufacturer" id="Manufacturer">
+          <label for="subscribe-field">MAKIta</label>
+          <br>
+          <input type="checkbox" name="Manufacturer" id="Manufacturer">
+          <label for="subscribe-field">Hitachi</label>
+        </form>
       </div>
+
+      <br>
   
       <div>
-        <h4>Питание:</h4>
-        <ul>
-          <li><img src="../img/radio-on.svg" alt="">Аккумуляторные</li>
-          <li><img src="../img/radio-off.svg" alt="">Сетевые</li>
-        </ul>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          Питание: 
+          <br>
+          <Label>
+            <input type="radio" name="supply" value="Аккумуляторные" checked> Аккумуляторные
+           </Label>
+           <br>
+           <Label>
+            <input type="radio" name="supply" value="Сетевые"> Сетевые
+           </Label>
+           <br>
+           <input type="submit" value="ПОКАЗАТЬ">
       </div>
-      
-      <button>ПОКАЗАТЬ</button>
+
+      <br>
   
       <div>
-        <h4>Сортировка:</h4>
-        <ul>
-          <li>по цене</li>
-          <li>по типу</li>
-          <li>по функционалу</li>
-          <li>по типу</li>
-        </ul>
+        Сортировка:
+        <br>
+        <select name="technologies" multiple size="4">
+          <option selected>по цене</option>
+          <option>по типу</option>
+          <option>по функционалу</option>
+        </select>
+        <br>
         <button>стрелочка по возрастанию</button>
+        <br>
         <button>стрелочка по убыванию</button>
       </div>
     </section> <!-- filters -->
@@ -187,12 +216,13 @@
       </div> <!-- perforator-cards -->
   
       <div class="pages">
-        <ul>
-          <li><a href="blank.html">1</a>
-          <li><a href="blank.html">2</a>
-          <li><a href="blank.html">3</a>
-          <li><a href="blank.html">следующая</a>  
-        </ul>
+           <input type="submit" value="1">
+           <br>
+           <input type="submit" value="2">
+           <br>
+           <input type="submit" value="3">
+           <br>
+           <input type="submit" value="следующая"> 
       </div> <!-- pages -->
   
     </section> <!-- perforators modification -->
