@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>ТЕХНОМАРТ</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link href="../css/style.css" rel="stylesheet">
 </head>
 
-<body style="background-color: grey;">
+<body>
 
   <h1 class="hidden-tag">Магазин Техномарт</h1>
 
   <header>
-    <img src="../img/logo.svg" width="220" height="68" alt="ТЕХНОМАРТ">
+    <img src="../img/logo.svg" alt="ТЕХНОМАРТ">
     <ul>
       <li>
         <form action="https://echo.htmlacademy.ru/courses" method="get">
@@ -21,8 +23,9 @@
       </li>
       <li><a href="blank.html">Закладки</a><img src="../img/icon-bookmark.svg" width="14" height="16" alt="закладки"></li>
       <li><a href="blank.html">Корзина</a><img src="../img/icon-cart.svg" width="15" height="15" alt="корзина"></li>
-      <li><a href="blank.html">Оформить заказ</a></li>
+      </li>
     </ul>
+    <button>Оформить заказ</button>
   </header>
 
   <div class="header2">
@@ -44,7 +47,7 @@
       <input type="button" value="Регистрация">
     </div>
 
-    <nav>
+    <nav class="menu">
       <ul>
         <li><a href="blank.html">Главная</a></li>
         <li><a href="blank.html">Компания</a></li>
@@ -62,44 +65,44 @@
     <section class="tile">
       <h2 class="hidden-tag">услуги</h2>
 
-      <div class="card">
+      <div class="card card-groups card-materials">
         <h3>Материалы</h3>
-        <p>на любой вкус</p>
+        <button>на любой вкус</button>
         <img src="../img/materials.svg" width="44" height="65" alt="ведро">
         <span class="label">new</span>
       </div>
   
-      <div class="card">
+      <div class="card card-groups card-tool">
         <h3>Инструмент</h3>
-        <p>на все случаи</p>
+        <button>на все случаи</button>
         <img src="../img/tool.svg" width="75" height="61" alt="дрель">
       </div>
   
-      <div class="card">
+      <div class="card card-groups card-technics">
         <h3>Техника</h3>
-        <p>для стройки</p>
+        <button>для стройки</button>
         <img src="../img/equipment.svg" width="78" height="62" alt="кузов спец.автомобиля">
       </div>
 
-      <div class="card">
+      <div class="card card-groups card-discounts">
         <h3>Скидки 50%</h3>
-        <p>на 350 товаров</p>
+        <button>на 350 товаров</button>
         <img src="../img/discounts.svg" width="59" height="72" alt="корзина">
       </div>
   
-      <div class="card">
+      <div class="card card-groups card-delivery">
         <h3>Доставка</h3>
-        <p>бесплатно</p>
+        <button>бесплатно</button>
         <img src="../img/delivery.svg" width="78" height="63" alt="грузовой автомобиль">
       </div>  
   
       <div class="slider">
         <h3>Перфораторы</h3>
-        <span>настоящие мужские игрушки</span>
+        <span>Настоящие мужские игрушки</span>
         <img src="../img/man-with-tool.jpg" width="620" height="266" alt="мужчина с инструментом">
         <img src="../img/icon-left.svg" width="22" height="44" alt="icon:arrow-prev">
         <img src="../img/icon-right.svg" width="22" height="44" alt="icon:arrow-next">
-        <a href="blank.html">открыть каталог</a>
+        <button>открыть каталог</button>
       </div>
   
     </section> <!-- tile -->
@@ -107,7 +110,7 @@
     <section class="popular-products">
       <header>
         <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-        <a href="blank.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>  
+        <button class="popular-products">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>  
       </header>
 
       <div class="products-cards">
@@ -144,7 +147,7 @@
   <section class="popular-manufacturers">
     <header>
       <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-      <a href="blank.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>  
+      <button class="popular-manufacturers">ВСЕ ПРОИЗВОДИТЕЛИ</button>  
     </header>
 
     <div class="brands">
