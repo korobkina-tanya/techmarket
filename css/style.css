@@ -1,0 +1,220 @@
+
+body {
+  background-color: grey;
+}
+
+header {
+  width: 1200px;
+  height: 42px;
+  background: #293449;
+  display: inline-block;
+}
+
+header > img {
+  width: 220px;
+  height: 47px;
+}
+
+header > button {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  color: #FFFFFF;
+  
+  width: 150px;
+  height: 42px;
+  background: #63A63E;
+}
+
+.header2 > p {
+  font-family: Cuprum;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+ 
+  align-items: center;
+  
+  color: #EE3643;
+}
+
+.call-box > span {
+  font-family: Cuprum;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  
+  align-items: center;
+  color: #EE3643;
+
+  width: 270px;
+  height: 45px;
+}
+.header2 > address {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 24px;
+ 
+  align-items: center;
+  text-align: center;
+  
+  color: #32425C;
+
+  width: 250px;
+  height: 24px;
+}
+
+.login-button-group > button {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 21px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  width: 121px;
+  height: 45px;
+}
+
+.login-button-group > input {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 21px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  width: 150px;
+  height: 45px;
+}
+
+.menu > ul {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+  
+  width: 940px;
+  height: 60px;
+  
+  background: #32425C;
+  box-shadow: inset 0px -5px 0px #293449;
+}
+
+.card {
+  width: 300px;
+  height: 123рх;
+}
+
+.card-groups > h3 {
+  font-family: Cuprum;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.card-groups > button {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  width: 135px;
+  height: 38рх;
+
+  background: #FFFFFF;
+  opacity: 0.3;
+}
+
+.card-materials {
+  background: #FFBF47;
+}
+
+.card-tool {
+  background: #3BBCE3;
+}
+
+.card-technics {
+  background: #DC91D8;
+}
+
+.card-discounts {
+  background: #8ED78F;
+}
+
+.card-delivery {
+  background: #FFC047;
+}
+
+.slider > h3 {
+  font-family: Cuprum;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  width: 620px;
+  height: 104px;
+
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.slider > span {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+}
+
+.slider > button {
+  font-family: Cuprum;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+ 
+  text-transform: uppercase;
+
+  width: 192px;
+  height: 38рх;
+
+  background: #EE3643;
+}
+.popular-products > header,
+.popular-manufacturers > header {
+  color: #32425C;
+  
+  width: 940px;
+  height: 89px;
+  background: #F9F5F0;
+}
+
+header > .popular-products,
+header > .popular-manufacturers {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  width: 192px;
+  height: 38px;
+  background: #EE3643;
+}
