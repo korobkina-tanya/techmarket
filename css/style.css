@@ -1,210 +1,339 @@
 
-body {
-  background-color: grey;
+/* variables */
+
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+
+  --basic-grey-light: #32425C;
+  --basic-grey: #3D546F;
+  --basic-grey-dark: #293449;
+  
+  --basic-background-light: #C5C5C5;
+  --basic-background: #F1F5F7;
+  
+  --white: #FFFFFF;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
 }
 
-header {
-  width: 1200px;
+/* global */
+
+.page {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+
+  box-sizing: border-box;
+
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', sans-serif;
+  background-color: var(--white);
+
+  text-align: center;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* ------------------------------------------------------------- */
+/* page-header */
+
+.page-header {
+  display: grid;
+
+
+}
+
+.top-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   height: 42px;
-  background: #293449;
-  display: inline-block;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--basic-grey-light);
+
+  background-color: var(--basic-grey-dark);
 }
 
-header > img {
-  width: 220px;
-  height: 47px;
+.bottom-header {
+  height: 278px;
 }
 
-header > button {
-  font-family: Cuprum;
+/* ------------------------------------------------------------- */
+/* top-header */
+
+.site-logo {
+
+}
+
+.btn-search {
+
+}
+
+.btn-bookmarks {
+
+
+  width: 135px;
+  height: 38px;
+}
+
+.btn-buy {
   font-size: 18px;
   line-height: 24px;
-  align-items: center;
-  color: #FFFFFF;
+  color: var(--white);
   
   width: 150px;
   height: 42px;
-  background: #63A63E;
+  
+  background-color: var(--basic-green);
 }
 
-.header2 > p {
-  font-family: Cuprum;
+/* ------------------------------------------------------------- */
+/* bottom-header */
+
+.site-information {
+  width: 1200px;
+  height: 272px;
+  background-color: var(--basic-background);
+}
+
+
+
+.site-information > p {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
- 
-  align-items: center;
   
-  color: #EE3643;
+  color: var(--basic-red);
 }
 
-.call-box > span {
-  font-family: Cuprum;
+.call-box {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   
-  align-items: center;
-  color: #EE3643;
+  color: var(--basic-red);
+
+  background-color: #F3F7F9;
+  border: 3px solid #FFFFFF;
 
   width: 270px;
   height: 45px;
 }
-.header2 > address {
-  font-family: Cuprum;
+
+address {
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
- 
+  
+  display: flex;
   align-items: center;
   text-align: center;
   
-  color: #32425C;
-
-  width: 250px;
-  height: 24px;
+  color: var(--basic-grey-light);
 }
 
 .login-button-group > button {
-  font-family: Cuprum;
   font-size: 21px;
   line-height: 21px;
 
-  align-items: center;
-  text-align: center;
-
   color: #000000;
+  background-color:var(--white);
+  border:none;
 
   width: 121px;
   height: 45px;
 }
 
 .login-button-group > input {
-  font-family: Cuprum;
   font-size: 21px;
   line-height: 21px;
 
-  align-items: center;
-  text-align: center;
-
   color: #000000;
+  background-color:var(--white);
+  border:none;
 
   width: 150px;
   height: 45px;
 }
 
-.menu > ul {
-  font-family: Cuprum;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-
-  color: #FFFFFF;
-  
+.nav-menu > ul {
   width: 940px;
   height: 60px;
-  
-  background: #32425C;
-  box-shadow: inset 0px -5px 0px #293449;
+
+  list-style: none;
+  background-color: var(--basic-grey-light);
 }
 
-.card {
+/* ----------------------------------------------------- */
+/* card */
+
+.card-groups {
   width: 300px;
-  height: 123рх;
+  height: 123px;
 }
 
-.card-groups > h3 {
-  font-family: Cuprum;
+.card-groups > a > h3 {
   font-weight: 700;
   font-size: 24px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
-.card-groups > button {
-  font-family: Cuprum;
+.card-groups > a > span {
   font-size: 14px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: var(--basic-greylight);
   text-transform: uppercase;
 
   width: 135px;
   height: 38рх;
 
-  background: #FFFFFF;
+  background-color: var(--white);
   opacity: 0.3;
+
+  align-items: center;
+  text-align: center;
 }
 
 .card-materials {
-  background: #FFBF47;
+  background-color: #FFBF47;
 }
 
 .card-tool {
-  background: #3BBCE3;
+  background-color: #3BBCE3;
 }
 
 .card-technics {
-  background: #DC91D8;
+  background-color: #DC91D8;
 }
 
 .card-discounts {
-  background: #8ED78F;
+  background-color: #8ED78F;
 }
 
 .card-delivery {
-  background: #FFC047;
+  background-color: #FFC047;
 }
 
+/* ----------------------------------- */
+
 .slider > h3 {
-  font-family: Cuprum;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
 
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: var(--white);
 
   width: 620px;
   height: 104px;
 
-  background: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .slider > span {
-  font-family: Cuprum;
   font-size: 18px;
   line-height: 24px;
 
-  color: #FFFFFF;
+  color:var(--white);
 }
 
-.slider > button {
-  font-family: Cuprum;
-  font-weight: normal;
+.btn-red {
   font-size: 14px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: var(--white);
  
   text-transform: uppercase;
 
   width: 192px;
   height: 38рх;
 
-  background: #EE3643;
+  background-color: #EE3643;
+  border:none;
 }
-.popular-products > header,
-.popular-manufacturers > header {
-  color: #32425C;
+
+.popular-products > h2,
+.popular-manufacturers > h2 {
+  font-size: 30px;
+  line-height: 30px;
+
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--basic-grey-light);
+  text-transform: uppercase;
   
   width: 940px;
   height: 89px;
-  background: #F9F5F0;
+  background-color: #F9F5F0;
 }
 
-header > .popular-products,
-header > .popular-manufacturers {
-  font-family: Cuprum;
+.products-cards > ul > li {
+  border: 1px solid #EAEAEA;
+
+  width: 220px;
+  height: 318px;
+}
+
+.products-cards > ul > li > h3 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  
+  width: 185px;
+  height: 43px; 
+}
+
+.products-cards .price-old {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+
+  color: #A9A9A9;
+  
+  width: 65px;
+  height: 18px; 
+}
+
+button.btn-buy {
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
 
@@ -214,7 +343,307 @@ header > .popular-manufacturers {
 
   color: #FFFFFF;
 
-  width: 192px;
+  width: 135px;
   height: 38px;
-  background: #EE3643;
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+}
+
+
+
+button.price-new {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  width: 141px;
+  height: 38рх;
+
+  background-color: #EE3643;
+  border: none;
+}
+
+button.brands {
+  width: 220px;
+  height: 145px;
+
+  background-color:var(--white);
+  border: 1px solid #EAEAEA;
+
+  list-style: none;
+}
+
+.store-services {
+  width: 1200px;
+  height: 522px;
+
+  background-color: #F1F5F7;
+}
+
+.perforator-information {
+  width: 1200px;
+  height: 261px;
+
+  background-color: #F1F5F7;
+}
+
+.store-services h2,
+.perforator-information h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-grey-light);
+}
+
+.store-services p,
+.perforator-information p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.company-information h2,
+.contacts h2
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+
+.company-information p, 
+.contacts p
+{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.company-information span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+button.btn-company-info {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+ 
+  text-transform: uppercase;
+
+  width: 220px;
+  height: 38рх;
+
+  background-color: #EE3643;
+  border:none;
+}
+
+button.contacts {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+ 
+  text-transform: uppercase;
+
+  width: 300px;
+  height: 38рх;
+
+  background-color: #EE3643;
+  border:none;
+}
+
+div.footer-menu {
+  width: 1200px;
+  height: 193px;
+  background-color: var(--basic-grey);
+  display: inline-block;
+  list-style: none;
+}
+
+.yellow-menu a {
+  color: #FFD180;
+}
+
+.yellow-menu address {
+  font-size: 18px;
+  line-height: 24px;
+
+  align-items: center;
+
+  color: #F3F7F9;
+}
+
+nav.feedback {
+  width: 1200px;
+  height: 107px;
+  background-color: var(--basic-grey-dark);
+  display: inline-block;
+  list-style: none;
+}
+
+.feedback > p {
+  font-size: 16px;
+  line-height: 18px;
+  color:var(--white);
+}
+
+.feedback > p > a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFD180;
+}
+.personal-data-and-orders a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+ 
+  align-items: center;
+  text-align: center;
+  
+  color: #32425C;
+
+  width: 210px;
+  height: 18px;
+}
+
+.way li {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  width: 463px;
+  height: 18px;
+}
+
+.sctn-perforator {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+
+  align-items: center;
+  text-transform: uppercase;
+
+  color: var(--basic-grey-light);
+
+  width: 940px;
+  height: 89px;
+
+  background-color: #F2F6F8;
+}
+
+.sctn-filters h3 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  
+  align-items: center;
+  text-transform: uppercase;
+  
+  color: #000000;
+
+  width: 220px;
+  height: 39px;
+
+  background-color: #F7F3EC;
+}
+
+.sctn-filters h4 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+div .price-selection {
+  width: 220px;
+  height: 80px;
+
+  background-color: #F7F3EC;
+}
+
+.min-max-price {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+  width: 95px;
+  height: 38px;
+
+  background-color: #F7F3EC;
+}
+
+.checkbox .subscribe-field {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-technology {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #000000;
 }
