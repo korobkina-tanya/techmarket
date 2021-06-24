@@ -150,19 +150,11 @@ padding-top: 9px;
   align-items: center;
 }
 
-
-
-.bottom-header {
-  height: 278px;
-}
-
 .bottom-header {
   display: grid;
-  grid-template-columns: 130px 300px 300px 1fr 1fr 130px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 130px 320px 339px 1fr 150px 130px;
 
-  
-  height: 272px;
+  height: 158px;
   background-color: var(--basic-background);
 }
 
@@ -170,43 +162,48 @@ padding-top: 9px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
-  align-self: center;
+
+  padding-top: 37px;
+  padding-left: 30px;
   color: var(--basic-red);
 
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
+.contact-information {
+  padding-top: 48px;
+}
+
 .call-box {
-  display: grid;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  
+  padding-top: 7px;
+  padding-left: 39px;
+
   color: var(--basic-red);
 
   background-color: #F3F7F9;
   border: 3px solid #FFFFFF;
-  align-self: center;
 
   width: 270px;
   height: 45px;
-  justify-items: center;
+  
 }
 
-address {
-  display: grid;
+.contact-information > address {
   font-size: 14px;
   line-height: 24px;
-  align-self: center;
   
   color: var(--basic-grey-light);
+  padding-top: 1px;
 }
 
 .login-button-group {
   display: grid;
-  justify-items: end;
-  align-self: center;
+  justify-items: start;
+  padding-top: 46px;
 }
 
 .login-button-group > button {
