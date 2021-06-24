@@ -189,7 +189,6 @@ padding-top: 9px;
 
   width: 270px;
   height: 45px;
-  
 }
 
 .contact-information > address {
@@ -228,23 +227,32 @@ padding-top: 9px;
 
   width: 150px;
   height: 45px;
-  
+}
+
+.bottom-header-nav {
+  display: grid;
+  grid-template-columns: 130px 1fr 130px;
+
+  height: 120px;
+  background-color: var(--basic-background);
 }
 
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(7, min-content);
-  grid-gap: 55px;
-  padding-left: 55px;
-  align-items: center;
- 
-  width: 885px;
+  
+  width: 940px;
   height: 60px;
 
   background-color: var(--basic-grey-light);
 
-  grid-column-start: -6;
-  grid-column-end: -2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.nav-menu > a {
+  padding-left: 55px;
+  padding-top: 16px;
 }
 
 /* ------------------------------------------------------------- */
