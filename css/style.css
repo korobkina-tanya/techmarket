@@ -370,7 +370,7 @@ padding-top: 9px;
   grid-template-rows: 409px 427px 419px 522px 356px;
 }
 /* ------------------------------------------------------------- */
-/* card */
+/* tile */
 
 .tile {
   display: grid;
@@ -520,7 +520,8 @@ padding-top: 9px;
   grid-row-end: 4;
 }
 
-/* ----------------------------------- */
+/* ------------------------------------------------------------- */
+/* popular-products */
 .popular-products {
   display: grid;
   
@@ -641,13 +642,6 @@ button.brands {
   list-style: none;
 }
 
-.store-services {
-  width: 1200px;
-  height: 522px;
-
-  background-color: #F1F5F7;
-}
-
 .perforator-information {
   width: 1200px;
   height: 261px;
@@ -655,7 +649,6 @@ button.brands {
   background-color: #F1F5F7;
 }
 
-.store-services h2,
 .perforator-information h2 {
   font-style: normal;
   font-weight: normal;
@@ -667,7 +660,6 @@ button.brands {
   color: var(--basic-grey-light);
 }
 
-.store-services p,
 .perforator-information p {
   font-family: PT Sans;
   font-style: normal;
@@ -870,17 +862,13 @@ div .price-selection {
 }
 
 /* ------------------------------------------------------------- */
-/* card */
+/* popular-manufacturer */
 
 .popular-manufacturers {
   display: grid;
   
   grid-template-columns: 130px 235px 235px 235px 235px 130px;
   grid-template-rows: 89px 145px 145px;
-  row-gap: 20px;
-
-  grid-column-start: 2;
-  grid-column-end: 6;
 
   grid-row-start: 3;
   grid-row-end: 4;
@@ -990,4 +978,69 @@ div .price-selection {
 
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+/* ------------------------------------------------------------- */
+/* store-services */
+
+.store-services {
+  display: grid;
+  
+  grid-template-columns: 130px 320px 620px 130px;
+  grid-template-rows: 172px 350px;
+
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.store-services {
+  width: 1200px;
+  height: 522px;
+
+  background-color: #F1F5F7;
+}
+
+.services {
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.list-of-service {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.delivery {
+  grid-column-start:3;
+  grid-column-end: 4;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.store-services h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-grey-light);
+}
+
+.store-services p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #000000;
 }
