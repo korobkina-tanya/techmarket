@@ -61,10 +61,10 @@ ul li {
 }
 
 .page > .container {
-  grid-column-start: 2;
+  
 
   display: grid;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 320px 2531px 300px;
 }
 
 /* ------------------------------------------------------------- */
@@ -362,67 +362,89 @@ padding-top: 9px;
   line-height: 18px;
   color: #FFD180;
 } 
+/* ------------------------------------------------------------- */
+/* main */
 
+.container-main {
+  display: grid;
+  grid-template-rows: 409px 427px 419px 522px 356px;
+}
 /* ------------------------------------------------------------- */
 /* card */
+
 .tile {
-display: grid;
-grid-template-columns: repeat(300px, 1fr);
-grid-gap: 20px;
-margin: 0 130px;
-width: 940px;
-
-
-grid-template-areas:
-  "a b c"
-  "d d e"
-  "d d f";
-align-items: start;
+  display: grid;
+  
+  grid-template-columns: 130px 320px 320px 300px 130px;
+  grid-template-rows: 143px 143px 123px;
 }
 
-.card-groups .card-materials {
-  grid-area: a;
+.card-materials {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
-.card-groups .card-tool {
-  grid-area: b;
+.card-tool {
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
-.card-groups .card-technics {
-  grid-area: c;
+.card-technics {
+  display: grid;
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
-.slider-man {
-  grid-area: d;
+.card-delivery {
+  display: grid;
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
-.card-groups .card-delivery {
-  grid-area: e;
-}
+.card-discounts {
+  display: grid;
+  grid-column-start: 4;
+  grid-column-end: 5;
 
-.card-groups .card-discounts {
-  grid-area: f;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .card-groups {
   width: 300px;
-  height: 143px;
+  height: 123px;
 }
 
-.card-groups > a > h3 {
+.card-groups h3 {
   font-weight: 700;
   font-size: 24px;
   color: var(--white);
+
+  padding-left: 23px;
 }
 
-.card-groups > a > span {
+.card-groups span {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-greylight);
   text-transform: uppercase;
 
   width: 135px;
-  height: 38рх;
+  height: 38px;
 
   background-color: var(--white);
   opacity: 0.3;
@@ -454,6 +476,13 @@ align-items: start;
 /* ----------------------------------- */
 
 .slider-man {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  grid-row-start: 2;
+  grid-row-end: 4;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -468,7 +497,7 @@ align-items: start;
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-.slider-man > span {
+.slider-man span {
   font-size: 18px;
   line-height: 24px;
 
@@ -487,21 +516,26 @@ align-items: start;
 
   background-color: #EE3643;
   border:none;
-  grid-row-start: ;
-  grid-row-end: ;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 /* ----------------------------------- */
-.popular-products
- {
+.popular-products {
   display: grid;
-  grid-template-columns: 130px 470px 470px 130px; 
+  
+  grid-template-columns: 130px 235px 235px 235px 235px 130px;
+  grid-template-rows: 89px 20px 318px;
 }
 
-.popular-products > h2 {
+.popular-products h2 {
   
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 6;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+
   font-size: 30px;
   line-height: 30px;
 
@@ -510,13 +544,19 @@ align-items: start;
   color: var(--basic-grey-light);
   text-transform: uppercase;
   
-  width: 940px;
   height: 89px;
   background-color: #F9F5F0;
 }
 
-.popular-products > .btn-red-popular {
+.btn-red-popular-goods {
   display: grid;
+
+  grid-column-start: 5;
+  grid-column-end: 6;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
@@ -528,17 +568,16 @@ align-items: start;
 
   background-color: #EE3643;
   border:none;
+}
+
+.products-card-1 {
+  display: grid;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
   grid-row-start: 3;
   grid-row-end: 4;
-}
-
-.products-cards {
-  display: grid;
-  grid-template-columns: 235px 235px 235px 235px;
-}
-
-.products-cards {
-  
 }
 
 .products-cards > ul > li > h3 {
@@ -828,4 +867,127 @@ div .price-selection {
   text-transform: uppercase;
 
   color: #000000;
+}
+
+/* ------------------------------------------------------------- */
+/* card */
+
+.popular-manufacturers {
+  display: grid;
+  
+  grid-template-columns: 130px 235px 235px 235px 235px 130px;
+  grid-template-rows: 89px 145px 145px;
+  row-gap: 20px;
+
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.popular-manufacturers h2 {
+  
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  font-size: 30px;
+  line-height: 30px;
+
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--basic-grey-light);
+  text-transform: uppercase;
+  
+  height: 89px;
+  background-color: #F9F5F0;
+}
+
+.btn-red-popular-manufacturers {
+  display: grid;
+
+  grid-column-start: 5;
+  grid-column-end: 6;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+ 
+  text-transform: uppercase;
+
+  width: 192px;
+  height: 38рх;
+
+  background-color: #EE3643;
+  border:none;
+}
+
+.brands-bosch {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.brands-makita {
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.brands-DeWALT {
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.brands-interscol {
+  grid-column-start: 5;
+  grid-column-end: 6;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.brands-hitachi {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.brands-LG {
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.brands-AEG {
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.brands-metabo {
+  grid-column-start: 5;
+  grid-column-end: 6;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
