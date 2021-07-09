@@ -705,7 +705,7 @@ ul li {
 }
 
 .products-card-1 img {
- margin-left: 18px;
+  margin-left: 18px;
 
   grid-row-start: 1;
   grid-row-end: 2;
@@ -714,24 +714,23 @@ ul li {
 .products-card-2 img {
   margin-left: 40px;
  
-   grid-row-start: 1;
-   grid-row-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
  }
 
  .products-card-3 img {
   margin-left: 33px;
  
-   grid-row-start: 1;
-   grid-row-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
  }
 
  .products-card-4 img {
   margin-left: 40px;
  
-   grid-row-start: 1;
-   grid-row-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
  }
-
 
 .products-cards div {
   font-family: PT Sans;
@@ -787,6 +786,266 @@ button.price-new {
 
   grid-row-start: 4;
   grid-row-end: 5;
+}
+
+/* ------------------------------------------------------------- */
+/* popular-manufacturers */
+
+.popular-manufacturers {
+  display: grid;
+  
+  grid-template-columns: 130px 235px 235px 235px 235px 130px;
+  grid-template-rows: 89px 20px 145px 20px 145px;
+
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.block-popular-manufacturers {
+  display: grid;
+  grid-template-columns: 730px 210px;
+
+  width: 940px;
+  height: 89px;
+  
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  height: 89px;
+  background-color: #F9F5F0;
+}
+
+.block-popular-manufacturers span {
+  
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  font-size: 30px;
+  line-height: 30px;
+
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--basic-grey-light);
+  text-transform: uppercase;
+
+  margin-left: 28px;
+  margin-top: 29px;
+}
+
+.btn-red-popular-manufacturers {
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+ 
+  text-transform: uppercase;
+
+  width: 192px;
+  height: 38px;
+
+  background-color: #EE3643;
+  border:none;
+
+  margin-right: 19px;
+  margin-top: 25px;
+}
+
+.brands-manufacturers-1 {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  width: 940px;
+  height: 145px;
+  
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.brands-bosch {
+  display: grid;
+
+  width: 222px;
+  height: 147px;
+  border: 1px solid #EAEAEA;
+  
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.brands-makita {
+  display: grid;
+
+  width: 222px;
+  height: 147px;
+  border: 1px solid #EAEAEA;
+  
+  margin-left: 5px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.brands-DeWALT {
+  display: grid;
+
+  width: 222px;
+  height: 147px;
+  border: 1px solid #EAEAEA;
+  margin-left: 10px;
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.brands-interscol {
+  display: grid;
+
+  width: 222px;
+  height: 147px;
+  border: 1px solid #EAEAEA;
+  
+  margin-left: 15px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.brands-manufacturers-2 {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  width: 940px;
+  height: 145px;
+  
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.brands-hitachi {
+  display: grid;
+
+  width: 222px;
+  height: 147px;
+  border: 1px solid #EAEAEA;
+  
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.brands-LG {
+  display: grid;
+
+  width: 222px;
+  height: 147px;
+  border: 1px solid #EAEAEA;
+  margin-left: 5px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.brands-AEG {
+  display: grid;
+
+  width: 222px;
+  height: 147px;
+  border: 1px solid #EAEAEA;
+  margin-left: 10px;
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.brands-metabo {
+  display: grid;
+
+  width: 222px;
+  height: 147px;
+  border: 1px solid #EAEAEA;
+  
+  margin-left: 15px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.brands-bosch img {
+  margin-left: 47px;
+  margin-top: 54px;
+}
+
+.brands-makita img {
+  margin-left: 48px;
+  margin-top: 50px;
+}
+
+.brands-DeWALT img {
+  margin-left: 37px;
+  margin-top: 48px;
+}
+
+.brands-interscol img {
+  margin-left: 9px;
+  margin-top: 34px;
+} 
+
+.brands-hitachi img {
+  margin-left: 28px;
+  margin-top: 58px;
+}
+
+.brands-LG img {
+  margin-left: 50px;
+  margin-top: 35px;
+}
+
+.brands-AEG img {
+  margin-left: 35px;
+  margin-top: 24px;
+}
+
+.brands-metabo img {
+  margin-left: 8px;
+  margin-top: 34px;
 }
 
 button.brands {
@@ -1016,125 +1275,6 @@ div .price-selection {
   text-transform: uppercase;
 
   color: #000000;
-}
-
-/* ------------------------------------------------------------- */
-/* popular-manufacturer */
-
-.popular-manufacturers {
-  display: grid;
-  
-  grid-template-columns: 130px 235px 235px 235px 235px 130px;
-  grid-template-rows: 89px 145px 145px;
-
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.popular-manufacturers h2 {
-  
-  grid-column-start: 2;
-  grid-column-end: 6;
-
-  grid-row-start: 1;
-  grid-row-end: 2;
-
-  font-size: 30px;
-  line-height: 30px;
-
-  align-items: center;
-  text-transform: uppercase;
-  color: var(--basic-grey-light);
-  text-transform: uppercase;
-  
-  height: 89px;
-  background-color: #F9F5F0;
-}
-
-.btn-red-popular-manufacturers {
-  display: grid;
-
-  grid-column-start: 5;
-  grid-column-end: 6;
-
-  grid-row-start: 1;
-  grid-row-end: 2;
-
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--white);
- 
-  text-transform: uppercase;
-
-  width: 192px;
-  height: 38рх;
-
-  background-color: #EE3643;
-  border:none;
-}
-
-.brands-bosch {
-  grid-column-start: 2;
-  grid-column-end: 3;
-
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.brands-makita {
-  grid-column-start: 3;
-  grid-column-end: 4;
-
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.brands-DeWALT {
-  grid-column-start: 4;
-  grid-column-end: 5;
-
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.brands-interscol {
-  grid-column-start: 5;
-  grid-column-end: 6;
-
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.brands-hitachi {
-  grid-column-start: 2;
-  grid-column-end: 3;
-
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.brands-LG {
-  grid-column-start: 3;
-  grid-column-end: 4;
-
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.brands-AEG {
-  grid-column-start: 4;
-  grid-column-end: 5;
-
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.brands-metabo {
-  grid-column-start: 5;
-  grid-column-end: 6;
-
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
 
 /* ------------------------------------------------------------- */
