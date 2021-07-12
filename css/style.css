@@ -367,7 +367,7 @@ ul li {
 
 .container-main {
   display: grid;
-  grid-template-rows: 409px 427px 419px 522px 356px;
+  grid-template-rows: 59px 409px 59px 427px 70px 419px 70px 522px 70px 356px 70px;
 }
 /* ------------------------------------------------------------- */
 /* tile */
@@ -384,8 +384,8 @@ ul li {
   grid-column-start: 2;
   grid-column-end: 3;
 
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .card-tool {
@@ -570,8 +570,9 @@ ul li {
   grid-column-start: 2;
   grid-column-end: 6;
 
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+
 }
 
 .block-popular-products {
@@ -800,8 +801,8 @@ button.price-new {
   grid-column-start: 2;
   grid-column-end: 6;
 
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
 }
 
 .block-popular-manufacturers {
@@ -1086,9 +1087,39 @@ button.brands {
   color: #000000;
 }
 
-.company-information h2,
-.contacts h2
-{
+/* ------------------------------------------------------------- */
+/* company-information-contacts */
+
+.company-information-contacts {
+  display: grid;
+  
+  grid-template-columns: 130px 640px 300px 130px;
+  grid-template-rows: 356px;
+
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.company-information {
+  display: grid;
+  grid-template-rows: 30px 24px 147px 117px 38px;
+
+  width: 640px;
+  height: 356px;
+  
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.company-information div {
+  grid-row-start: 1;
+  grid-row-end: 2;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -1099,9 +1130,9 @@ button.brands {
   color: #000000;
 }
 
-.company-information p, 
-.contacts p
-{
+.company-information-advertising {
+  grid-row-start: 3;
+  grid-row-end: 4;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -1111,7 +1142,9 @@ button.brands {
   color: #000000;
 }
 
-.company-information span {
+.company-information ul {
+  grid-row-start: 4;
+  grid-row-end: 5;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1121,6 +1154,8 @@ button.brands {
 }
 
 button.btn-company-info {
+  grid-row-start: 5;
+  grid-row-end: 6;
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
@@ -1134,7 +1169,54 @@ button.btn-company-info {
   border:none;
 }
 
-button.contacts {
+.contacts {
+  display: grid;
+  grid-template-rows: 30px 24px 49px 32px 158px 25px 38px;
+
+  width: 300px;
+  height: 356px;
+  
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.contacts div {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+
+.pickup {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.contacts img {
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.btn-contacts {
+  grid-row-start: 7;
+  grid-row-end: 8;
+
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
@@ -1147,6 +1229,14 @@ button.contacts {
   background-color: #EE3643;
   border:none;
 }
+
+
+
+
+
+
+
+
 
 .personal-data-and-orders a {
   font-style: normal;
@@ -1279,15 +1369,15 @@ div .price-selection {
 
 /* ------------------------------------------------------------- */
 /* store-services */
-
+/*
 .store-services {
   display: grid;
   
-  grid-template-columns: 130px 320px 620px 130px;
-  grid-template-rows: 172px 350px;
+  grid-template-columns: 130px 240px 700px 130px;
+  grid-template-rows: 238px 284px;
 
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 9;
 }
 
 .store-services {
