@@ -1369,7 +1369,7 @@ div .price-selection {
 
 /* ------------------------------------------------------------- */
 /* store-services */
-/*
+
 .store-services {
   display: grid;
   
@@ -1378,9 +1378,10 @@ div .price-selection {
 
   grid-row-start: 8;
   grid-row-end: 9;
-}
 
-.store-services {
+  grid-column-start: 1;
+  grid-column-end: 6;
+
   width: 1200px;
   height: 522px;
 
@@ -1388,12 +1389,52 @@ div .price-selection {
 }
 
 .services {
+  display: grid;
+  grid-template-rows: 64px 30px 25px 49px 70px;
   grid-column-start: 2;
   grid-column-end: 4;
 
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
+.services div {
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-grey-light);
+}
+
+.services p {
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.service-categories {
+  display: grid;
+  grid-template-columns: 130px 320px 620px 130px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 
 .list-of-service {
   grid-column-start: 2;
@@ -1411,23 +1452,3 @@ div .price-selection {
   grid-row-end: 3;
 }
 
-.store-services h2 {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
-
-  text-transform: uppercase;
-
-  color: var(--basic-grey-light);
-}
-
-.store-services p {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
-
-  color: #000000;
-}
