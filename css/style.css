@@ -1428,15 +1428,16 @@ div .price-selection {
 .service-categories {
   display: grid;
   grid-template-columns: 130px 320px 620px 130px;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
 
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-
 .list-of-service {
+  height: 100px;
+  width: 100px;
   grid-column-start: 2;
   grid-column-end: 3;
 
@@ -1445,10 +1446,33 @@ div .price-selection {
 }
 
 .delivery {
-  grid-column-start:3;
+  grid-column-start: 3;
   grid-column-end: 4;
 
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
+.delivery div {
+  
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-grey-light);
+}
+
+.delivery p {
+
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #000000;
+}
