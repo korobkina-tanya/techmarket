@@ -103,84 +103,75 @@
           <span>Фильтр:</span>
 
           <div>
-            <!--
-            <div>
-              <h4>Цена:</h4>
-              <div class="price-selection">
-                <img src="../img/filter-button.svg" alt="бегунок цен">
-                <img src="../img/filter-button.svg" alt="бегунок цен">
-              </div>
+            <form method="get" action="http://echo.htmlacadamy.ru">
+              <fieldset class="filter-item">
+                <legend>Цена:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="width: 60%; margin-left: 20%;"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      -<input type="number" name="max-price" value="30000">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
             
-              <span class="min-max-price">0</span>
-              <span>-</span>
-              <span class="min-max-price">30000</span>
-            </div>
-    
-            <div class="price">
-              <label for="price">Цена:</label>
-              <input type="range" id="price" name="price" min="0" max="30000" step="1">
-            </div>
-      
+            </form>
+            
             <div>
-              <h4>Производители:</h4>
-              <form action="https://echo.htmlacademy.ru/courses" method="post">
+              <div class="all-manufacturers">Производители:</div>
+              <form class="filter-manufacturer" action="https://echo.htmlacademy.ru/courses" method="post">
                 <input type="checkbox" name="Manufacturer" id="Manufacturer" checked>
-                <label for="subscribe-field">BOSCH</label>
+                <label class="choice-manufacturers" for="subscribe-field">BOSCH</label>
     
                 <br>
     
                 <input type="checkbox" name="Manufacturer" id="Manufacturer">
-                <label for="subscribe-field">ИНТЕРСКОЛ</label>
+                <label class="choice-manufacturers" for="subscribe-field">ИНТЕРСКОЛ</label>
     
                 <br>
     
                 <input type="checkbox" name="Manufacturer" id="Manufacturer" checked>
-                <label for="subscribe-field">MAKIta</label>
+                <label class="choice-manufacturers" for="subscribe-field">MAKIta</label>
     
                 <br>
     
                 <input type="checkbox" name="Manufacturer" id="Manufacturer">
-                <label for="subscribe-field">MAKIta</label>
+                <label class="choice-manufacturers" for="subscribe-field">MAKIta</label>
     
                 <br>
     
                 <input type="checkbox" name="Manufacturer" id="Manufacturer">
-                <label for="subscribe-field">Hitachi</label>
+                <label class="choice-manufacturers" for="subscribe-field">Hitachi</label>
               </form>
             </div>
       
             <div>
-              <h4>Питание:</h4>
+              <div class="type-of-power">Питание:</div>
               <form action="https://echo.htmlacademy.ru/courses" method="post">
-                <Label>
+                <Label class="choice-power">
                   <input type="radio" name="supply" value="Аккумуляторные" checked> Аккумуляторные
                  </Label>
     
                  <br>
     
-                 <Label>
+                 <Label class="choice-power">
                   <input type="radio" name="supply" value="Сетевые"> Сетевые
                   </Label>
     
                <br>
     
-                <input type="submit" value="ПОКАЗАТЬ">
+                <button class="btn-show">ПОКАЗАТЬ</button>
             </div>
-    
-            <br>
-      
-            <div>
-              <h4>Сортировка:</h4>
-              <br>
-              <select class="select-technology" name="technology" multiple size="4">
-                <option selected>по цене</option>
-                <option>по типу</option>
-                <option>по функционалу</option>
-              </select>
-              <button>стрелочка по возрастанию</button>
-              <button>стрелочка по убыванию</button>
-            </div>
-            -->
           </div>
         </section>
 
@@ -301,7 +292,6 @@
           </p>
         </div>
       </section>
-
     </main>
 
     <footer class="page-footer">
