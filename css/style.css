@@ -107,9 +107,8 @@ ul li {
   color: var(--white);
 }
 
-.top-logo:hover,
-.top-logo:focus {
-  background-color: var(-);
+.top-logo:active {
+  background-color: var(--error);
 }
 
 .top-header-buttons {
@@ -141,6 +140,11 @@ ul li {
   align-items: center;
 }
 
+.btn-bookmarks a:active,
+.btn-cart a:active {
+opacity: 50%;
+}
+
 .btn-checkout {
   padding-left: 19px;
   padding-top: 9px;
@@ -151,6 +155,11 @@ ul li {
 .btn-checkout:hover,
 .btn-checkout:focus {
   background-color: var(--success)
+}
+
+.btn-checkout:active {
+  background-color: var(--basic-green);
+  opacity: 50%;
 }
 
 
@@ -210,7 +219,7 @@ ul li {
   padding-top: 46px;
 }
 
-.login-button-group > button {
+.login-button-group button {
   font-size: 21px;
   line-height: 21px;
 
@@ -222,7 +231,7 @@ ul li {
   height: 45px;
 }
 
-.login-button-group > input {
+.login-button-group input {
   font-size: 21px;
   line-height: 21px;
 
@@ -233,6 +242,18 @@ ul li {
   width: 150px;
   height: 45px;
 }
+
+.login-button-group button:hover,
+.login-button-group button:focus,
+.login-button-group input:hover,
+.login-button-group input:focus {
+  color: var(--basic-red);
+}
+.login-button-group button:active,
+.login-button-group input:active {
+  color: var(--basic-background-light);
+}
+
 
 .bottom-header-nav {
   display: grid;
@@ -267,6 +288,11 @@ ul li {
   background-color: #293449;
 }
 
+.nav-menu a:active {
+  background-color: #1D2739;
+  opacity: 50%;
+}
+
 .customer-account {
   grid-column-start: 4;
   grid-column-end: 6;
@@ -289,9 +315,8 @@ ul li {
   height: 45px;
 }
 
-.user-button-group:hover,
-.user-button-group:focus {
-  background-color: #293449;
+.user-button-group:active {
+  color: var(--basic-background-light);
 }
   
 .personal-data-and-orders {
@@ -315,6 +340,10 @@ ul li {
 .personal-data-and-orders a:hover,
 .personal-data-and-orders a:focus {
   color: var(--basic-red);
+}
+
+.personal-data-and-orders a:active {
+  color: var(--basic-background-light);
 }
 
 
@@ -359,11 +388,38 @@ ul li {
   margin-top: 37px;
 }
 
-.navigation-links:hover,
-.navigation-links:focus,
-.navigation-links-yellow:hover,
-.navigation-links-yellow:focus {
+.navigation-links-company:hover,
+.navigation-links-company:focus,
+.navigation-links-news:hover,
+.navigation-links-news:focus,
+.navigation-links-catalog:hover,
+.navigation-links-catalog:focus,
+.navigation-links-delivery:hover,
+.navigation-links-delivery:focus,
+.navigation-links-contacts:hover,
+.navigation-links-contacts:focus,
+.navigation-links-yellow-materials:hover,
+.navigation-links-yellow-materials:focus,
+.navigation-links-yellow-technigue:hover,
+.navigation-links-yellow-technigue:focus,
+.navigation-links-yellow-tool:hover,
+.navigation-links-yellow-tool:focus,
+.navigation-links-yellow-special-offers:hover,
+.navigation-links-yellow-special-offers:focus {
   text-decoration: underline;
+}
+
+.navigation-links-company:active,
+.navigation-links-news:active,
+.navigation-links-catalog:active,
+.navigation-links-delivery:active,
+.navigation-links-contacts:active,
+.navigation-links-yellow-materials:active,
+.navigation-links-yellow-technigue:active,
+.navigation-links-yellow-tool:active,
+.navigation-links-yellow-special-offers:active {
+  opacity: 50%;
+  text-decoration: none;
 }
 
 .footer-menu-bottom {
@@ -614,6 +670,10 @@ ul li {
   background-color: var(--basic-background-light)
 }
 
+.card-groups a:active {
+  background-color: #A9A9A9;
+}
+
 .card-materials {
   background-color: #FFBF47;
 }
@@ -711,7 +771,7 @@ ul li {
   text-transform: uppercase;
 
   width: 192px;
-  height: 38рх;
+  height: 38px;
 
   background-color: var(--basic-red);
   border:none;
@@ -730,6 +790,10 @@ ul li {
 .btn-red-open:hover,
 .btn-red-open:focus {
   background-color: #CA2C37;
+}
+
+.btn-red-open:active {
+  background-color: var(--error);
 }
 
 /* ------------------------------------------------------------- */
@@ -1183,6 +1247,36 @@ ul li {
 
   grid-row-start: 5;
   grid-row-end: 6;
+}
+
+.brands-bosch:hover,
+.brands-bosch:focus,
+.brands-makita:hover,
+.brands-makita:focus,
+.brands-DeWALT:hover,
+.brands-DeWALT:focus,
+.brands-interscol:hover,
+.brands-interscol:focus,
+.brands-hitachi:hover,
+.brands-hitachi:focus,
+.brands-LG:hover,
+.brands-LG:focus,
+.brands-AEG:hover,
+.brands-AEG:focus,
+.brands-metabo:hover,
+.brands-metabo:focus {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.brands-bosch:active,
+.brands-makita:active,
+.brands-DeWALT:active,
+.brands-interscol:active,
+.brands-hitachi:active,
+.brands-LG:active,
+.brands-AEG:active,
+.brands-metabo:active {
+  opacity: 50%;
 }
 
 .brands-bosch img {
@@ -2042,6 +2136,11 @@ div .price-selection {
   background-color: var(--success);
 }
 
+.btn-buy:active {
+  border: 3px solid #518534;
+  background-color: #518534;
+}
+
 .btn-in-bookmarks {
 
   grid-column-start: 1;
@@ -2069,6 +2168,12 @@ div .price-selection {
 .btn-in-bookmarks:focus {
   color: var(--basic-grey-light);
   border: 3px solid #32425C;
+}
+
+.btn-in-bookmarks:active {
+  color: var(--basic-grey-light);
+  border: 3px solid #32425C;
+  opacity: 50%;
 }
 
 .sorting {
@@ -2110,9 +2215,21 @@ div .price-selection {
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  opacity: 30%;
+  text-decoration: underline;
+  text-decoration-color: var(--basic-red);
   line-height: 38px;
   height: 38px;
-  
+}
+
+.sorting-types a:hover,
+.sorting-types a:focus {
+  opacity: 100%;
+}
+
+.sorting-types a:active {
+  color: var(--basic-red);
+  text-decoration: none;
 }
 
 .sorting-types .price {
@@ -2187,6 +2304,11 @@ div .price-selection {
 .paging .page-next:hover,
 .paging .page-next:focus {
   border: 1px solid var(--basic-grey-light);
+}
+
+.paging .page-number:active,
+.paging .page-next:active {
+  border: 1px solid var(--basic-red);
 }
 
 .filter-item {
