@@ -22,20 +22,21 @@
         <div class="top-header-buttons">
   
           <div class="btn-search">
-            <form action="https://echo.htmlacademy.ru/courses" method="get">
+            <form class="btn-search-sites" action="https://echo.htmlacademy.ru/courses" method="get">
               <img src="../img/icon-search.svg" width="17" height="17" alt="поиск">
-              <input type="text" name="search" value="Поиск">
+              <input class="search-sites"  type="search" name="q" placeholder="Поиск:">
+              <input type="search" name="s" autofocus>
             </form>
           </div>
   
           <div class="btn-bookmarks">
-            <img src="../img/icon-bookmark.svg" width="14" height="16" alt="закладки">
+            <img class="img-btn-bookmarks" src="../img/icon-bookmark.svg" width="14" height="16" alt="закладки">
             <a href="blank.html">Закладки: </a>
             <span class="counter-bookmarks">0</span>
           </div>
       
           <div class="btn-cart">
-            <img src="../img/icon-cart.svg" width="15" height="15" alt="корзина">
+            <img class="img-btn-cart" src="../img/icon-cart.svg" width="15" height="15" alt="корзина">
             <a href="blank.html">Корзина: </a>
             <span class="counter-cart">0</span>
           </div>
@@ -61,14 +62,16 @@
         </div>
             
         <div class="login-button-group">
-          <button type="submit">
-            <img src="../img/icon-login.svg" width="20" height="17" alt="стрелочка">
+          <button class="account-login" type="submit">
+            <svg width="21" height="17" xmlns="../img/icon-login.svg" version="1.1">
+              <rect height="10" width="10" id="MyRect"/>
+            </svg>
             Войти
           </button>
         </div>
   
         <div class="login-button-group">
-          <input type="button" value="Регистрация">
+          <input class="account-registration" type="button" value="Регистрация">
         </div>
       </div>
   
@@ -346,18 +349,18 @@
         </div>
   
         <div class="social-links">
-          <a href="blank.html">
-            <img src="../img/icon-vk.svg" width="44" height="44
+          <a class="social-links-item" href="blank.html">
+            <img class="social-links-item-vk" src="../img/icon-vk.svg" width="25" height="14
             " alt="Вконтакте">
           </a>
 
-          <a href="blank.html">
-            <img src="../img/icon-fb.svg" width="44" height="44
+          <a class="social-links-item" href="blank.html">
+            <img class="social-links-item-fb" src="../img/icon-fb.svg" width="12" height="22
             " alt="Фейсбук">
           </a>
 
-          <a href="blank.html">
-            <img src="../img/icon-insta.svg" width="44" height="44
+          <a class="social-links-item" href="blank.html">
+            <img class="social-links-item-insta" src="../img/icon-insta.svg" width="21" height="21
             " alt="Инстаграм">
           </a>
         </div>
@@ -375,6 +378,48 @@
       </nav> 
 
     </footer>
+
+    <section class="modal modal-login">
+      <div class="decoration-modal-login">
+      </div>
+
+      <button class="modal-close" type="button" area-label="Закрыть"></button>
+
+      <p class="full-name">
+        <label for="full-name">Ваше имя:</label>
+        <br>
+        <input type="text" name="full-name" id="full-name" placeholder="Имя Фамилимя"/>
+      </p>
+
+      <p class="e-mail">
+        <label for="e-mail">Ваш e-mail:</label>
+        <br>
+        <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com"/>
+      </p>
+
+      <p class="message">
+        <label for="message">Текст письма:</label>
+        <br>
+        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+      </p>
+
+      <div class="decoration-submit">
+
+      </div>
+
+      <p class="submit-modal-login">
+        <button class="btn-submit-modal-login" type="submit">отправить</button>
+      </p>
+
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="decoration-modal-map"></div>
+      <button class="modal-close" type="button" area-label="Закрыть"></button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d363542.54847519344!2d33.35784043011763!3d44.61387305492873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409525ef659144f5%3A0xbd2da7afff4d34cc!2z0KHQtdCy0LDRgdGC0L7Qv9C-0LvRjA!5e0!3m2!1sru!2s!4v1628593125894!5m2!1sru!2s" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшечная 19/8, Санкт-Петербург"></iframe>
+
+    </section>
   
   </div>
 
