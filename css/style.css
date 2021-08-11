@@ -272,9 +272,31 @@ opacity: 50%;
   color: var(--basic-red);
 }
 
-#MyRect:hover {
-  fill: red;
-  stroke: black;
+.icon-login:hover,
+.icon-login:focus {
+  background-image: url(../img/icon-login-space-grey.svg);
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-login {
+  background-image: url(../img/icon-login-light-gray.svg);
+  width: 21px;
+  height: 19px;
+}
+
+.icon-user {
+  mask: url("../img/icon-user.svg");
+  width: 20px;
+  height: 18px;
+}
+
+.icon-logout {
+  mask: url("../img/icon-logout.svg");
+  width: 20px;
+  height: 17px;
 }
 
 .account-registration:hover,
@@ -1777,12 +1799,10 @@ div .price-selection {
 }
 
 .list-of-service {
-  height: 100px;
-  width: 100px;
+  height: 61px;
+  width: 240px;
   grid-column-start: 1;
   grid-column-end: 2;
-
-  justify-items: start;
 }
 
 .delivery {
@@ -2581,7 +2601,7 @@ div .price-selection {
   right: 0;
   left: 0;
   margin: auto;
-  display: ;
+  display: none;
 }
 
 .modal-login {
@@ -2623,15 +2643,20 @@ div .price-selection {
   text-transform: uppercase;
 
   width: 460px;
-  height: 38рх;
+  height: 38px;
 
   background-color: var(--basic-red);
   border:none;
 }
 
+.modal-close {
+  margin-right: 11px;
+}
+
+/*
 .modal-close::before,
 .modal-close::after {
-  content: "";
+  
   position: absolute;
   
   width: 21px;
@@ -2645,6 +2670,7 @@ div .price-selection {
 .modal-close::after {
   transform: rotate(-45deg);
 }
+*/
 
 .modal-map {
   width: 943px;
@@ -2683,15 +2709,26 @@ div .price-selection {
 }
 
 .decoration-cart {
+  display: flex;
   width: 620px;
   height: 112px;
   background-color: #f4f4f4;
 }
+
+.mark {
+  display: flex;
+  align-self: center;
+}
+  
 .in-cart {
   font-size: 24px;
   line-height: 30px;
   color: #000000;
   font-weight: 700;
+}
+
+.mark-item-in-cart {
+  margin-left: 81px;
 }
 
 .btn-cart-checkout {
@@ -2702,10 +2739,12 @@ div .price-selection {
   text-transform: uppercase;
 
   width: 192px;
-  height: 38рх;
+  height: 38px;
 
   background-color: var(--basic-red);
   border:none;
+
+  margin-left: 114px;
 }
 
 .btn-continue-shopping {
@@ -2716,10 +2755,12 @@ div .price-selection {
   text-transform: uppercase;
 
   width: 192px;
-  height: 38рх;
+  height: 38px;
 
   background-color: var(--white);
   border:none;
+
+  margin-right: 114px;
 }
   
   

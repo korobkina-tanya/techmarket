@@ -64,8 +64,10 @@
         <div class="customer-account">
           <div class="user-button-group">
             <img class="user" src="../img/icon-user.svg" width="20" height="18" alt="пользователь">
+            <span class="icon icon-user"></span>
             <span>Равшан Джамшутович</span>
-            <img src="../img/icon-login.svg" width="20" height="17" alt="стрелочка">
+            <img src="../img/icon-logout.svg" width="20" height="17" alt="стрелочка">
+            <span class="icon icon-logout"></span>
           </div>
 
           <div class="personal-data-and-orders">
@@ -207,7 +209,7 @@
               <img class="visually-hidden" src="#" alt="Перфоратор BOSCH BFG 6000">
               <!--
               <span class="label">new</span>
--->
+              -->
               <div class="perforator-model">Перфоратор BOSCH BFG 6000</div>
                 <div>
                   <button class="btn-buy"><img src="../img/icon-cart.svg" width="15" height="15" alt="корзина">купить</button>
@@ -362,23 +364,25 @@
       <div class="decoration-item-in-cart">
       </div>
 
-      <button class="modal-close" type="button" area-label="Закрыть"></button>
-
       <p>
-        <img class="user" src="../img/icon-mark.svg" width="66" height="66" alt="галочка">
+        <img class="modal-close" src="../img/icon-close.svg" width="21" height="21" alt="Закрыть">
+      </p>
+
+      <p class="mark">
+        <img class="mark-item-in-cart" src="../img/icon-mark.svg" width="66" height="66" alt="галочка">
         <span class="in-cart">Товар добавлен в корзину!</span>
       </p>
 
       <div class="decoration-cart">
+  
+        <p>
+          <button class="btn-cart-checkout" type="submit">оформить заказ</button>
+        </p>
+  
+        <p>
+          <button class="btn-continue-shopping" type="submit">продолжить покупки</button>
+        </p>
       </div>
-
-      <p>
-        <button class="btn-cart-checkout" type="submit">оформить заказ</button>
-      </p>
-
-      <p>
-        <button class="btn-continue-shopping" type="submit">продолжить покупки</button>
-      </p>
 
     </section>
 
