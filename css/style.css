@@ -272,8 +272,7 @@ opacity: 50%;
   color: var(--basic-red);
 }
 
-.icon-login:hover,
-.icon-login:focus {
+.account-login:hover .icon-login {
   background-image: url(../img/icon-login-space-grey.svg);
 }
 
@@ -1798,14 +1797,36 @@ div .price-selection {
   grid-column-end: 3;
 }
 
-.list-of-service {
+/* ---------------------- */
+
+.services-selector {
+  margin: 0;
+  padding: 0;
+}
+
+.services-selector-item {
+  font-family: Cuprum;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
   height: 61px;
   width: 240px;
+  padding-left: 22px;
+  padding-top: 13px;
+  background-color: var(--basic-grey-light);
+  color: var(--white);
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
-.delivery {
+.services-selector-item-selected {
+  background-color: var(--white);
+  color: var(--basic-grey-light)
+}
+
+/* ----------------------- */
+
+.service-info {
   display: grid;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -1829,7 +1850,7 @@ div .price-selection {
   grid-column-end: 2;
 }
 
-.delivery-description {
+.service-description {
 
   font-family: PT Sans;
   font-style: normal;

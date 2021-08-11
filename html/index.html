@@ -248,16 +248,17 @@
         </div>
 
         <div class="service-categories">
-          <select class="list-of-service"   name="list-of-service" multiple size="3">
-            <option selected>Доставка</option>
-            <option>Гарантия</option>
-            <option>Кредит</option>
-          </select>
+
+          <ul class="services-selector">
+            <li class="services-selector-item services-selector-item-selected" id="service-item-delivery">Доставка</li>
+            <li class="services-selector-item" id="service-item-warranty">Гарантия</li>
+            <li class="services-selector-item" id="service-item-credit">Кредит</li>
+          </ul>
   
-          <div class="delivery">
+          <div id="service-delivery" class="service-info">
             <div>
               <div class="service-type">ДОСТАВКА</div>
-              <p class="delivery-description">
+              <p class="service-description">
                 Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем,<br>
@@ -266,7 +267,38 @@
             </div>
             <img src="../img/avto.png" width="468" height="261" alt="автомобиль">
           </div>
+      
+          <div id="service-warranty" class="service-info visually-hidden">
+            <div>
+              <div class="service-type">ГАРАНТИЯ</div>
+              <p class="service-description">
+                Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!
+              </p>
+            </div>
+            <img src="../img/avto.png" width="468" height="261" alt="автомобиль">
+          </div>
+
+          <div id="service-credit" class="service-info visually-hidden">
+            <div>
+              <div class="service-type">КРЕДИТ</div>
+              <p class="service-description">
+                Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!
+              </p>
+            </div>
+            <img src="../img/avto.png" width="468" height="261" alt="автомобиль">
+          </div>
+          
         </div>
+      </div>
+
+
+
       </section> 
     
       <section class="company-information-contacts">
@@ -419,6 +451,8 @@
     </section>
  
   </div>
+
+  <script src="../js/index.js"></script> 
 
 </body>
 
