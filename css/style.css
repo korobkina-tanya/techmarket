@@ -267,15 +267,6 @@ opacity: 50%;
   height: 45px;
 }
 
-.account-login:hover,
-.account-login:focus {
-  color: var(--basic-red);
-}
-
-.account-login:hover .icon-login {
-  background-image: url(../img/icon-login-space-grey.svg);
-}
-
 .icon {
   display: inline-block;
 }
@@ -286,16 +277,33 @@ opacity: 50%;
   height: 19px;
 }
 
+.account-login:hover,
+.account-login:focus {
+  color: var(--basic-red);
+}
+
+.account-login:hover .icon-login {
+  background-image: url(../img/icon-login-space-grey.svg);
+}
+
 .icon-user {
-  mask: url("../img/icon-user.svg");
+  mask: url("../img/icon-user-light-gray.svg");
   width: 20px;
   height: 18px;
 }
 
 .icon-logout {
-  mask: url("../img/icon-logout.svg");
+  mask: url("../img/icon-logout-light-gray.svg");
   width: 20px;
   height: 17px;
+}
+
+.user-button-group:hover .icon-user {
+  background-image: url(../img/icon-user-space-grey.svg);
+}
+
+.user-button-group:hover .icon-logout {
+  background-image: url(../img/icon-logout-space-grey.svg);
 }
 
 .account-registration:hover,
