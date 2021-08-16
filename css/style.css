@@ -277,12 +277,12 @@ opacity: 50%;
   height: 19px;
 }
 
-.account-login:hover,
-.account-login:focus {
+.btn-login:hover,
+.btn-login:focus {
   color: var(--basic-red);
 }
 
-.account-login:hover .icon-login {
+.btn-login:hover .icon-login {
   background-image: url(../img/icon-login-space-grey.svg);
 }
 
@@ -2630,7 +2630,6 @@ div .price-selection {
   right: 0;
   left: 0;
   margin: auto;
-  display: none;
 }
 
 .modal-login {
@@ -2678,13 +2677,13 @@ div .price-selection {
   border:none;
 }
 
-.modal-close {
+.btn-popup-close {
   margin-right: 11px;
 }
 
 /*
-.modal-close::before,
-.modal-close::after {
+.btn-popup-close::before,
+.btn-popup-close::after {
   
   position: absolute;
   
@@ -2693,10 +2692,10 @@ div .price-selection {
   background-color: var(--basic-red);
 }
 
-.modal-close::before {
+.btn-popup-close::before {
   transform: rotate(45deg);
 }
-.modal-close::after {
+.btn-popup-close::after {
   transform: rotate(-45deg);
 }
 */
