@@ -45,6 +45,26 @@ btnClose.addEventListener("click", function() {
   loginWindow.classList.add("visually-hidden");
 });
 
+
+//-----------------------------------------------------
+// map popup window
+
+let contacts = document.querySelector(".btn-contacts");
+contacts.addEventListener("click", function(evt) 
+{
+  let popup = document.querySelector(".modal-map");
+  popup.classList.remove("visually-hidden");
+});
+
+
+//-----------------------------------------------------
+
+let btnCloseMap = document.querySelector(".btn-popup-close-map");
+btnCloseMap.addEventListener("click", function() {
+  let mapWindow = document.querySelector(".modal-map");
+  mapWindow.classList.add("visually-hidden");
+});
+
 //-----------------------------------------------------
 
 /*

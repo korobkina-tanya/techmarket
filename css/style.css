@@ -2633,7 +2633,10 @@ div .price-selection {
 }
 
 .modal-login {
+  display: grid;
+  grid-template-rows: 21px 21px 1fr 112px;
   width: 620px;
+  height: 430px;
   top: 120px;
   bottom: auto;
   background-color: var(--white);
@@ -2641,16 +2644,28 @@ div .price-selection {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.id-modal-windows {
+  display: grid;
+  grid-template-rows: 1fr 180px;
+}
+
+.id-name-email {
+  display: grid;
+  grid-template-columns: 300px 320px;
+}
+
+.decoration-submit {
+  display: grid;
+  grid-template-rows: 37px 75px;
+  width: 620px;
+  height: 112px;
+  background-color: #f4f4f4;
+}
+
 .decoration-modal-login {
   width: 620px;
   height: 7px;
   background-color: var(--basic-red);
-}
-
-.decoration-submit {
-  width: 620px;
-  height: 112px;
-  background-color: #f4f4f4;
 }
 
 .full-name,
@@ -2660,7 +2675,28 @@ div .price-selection {
   font-family: Cuprum;
   line-height: 24px;
   color: #000000;
-  padding-left: 39px;
+}
+
+.full-name,
+.message {
+  padding-left: 80px;
+  padding-top: 15px;
+}
+
+.e-mail {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.full-name input,
+.e-mail input {
+  width: 220px;
+  height: 38px;
+}
+
+.message textarea {
+  width: 460px;
+  height: 114px;
 }
 
 .btn-submit-modal-login {
@@ -2675,10 +2711,20 @@ div .price-selection {
 
   background-color: var(--basic-red);
   border:none;
+  grid-row-start: 2;
+  margin-left: 80px;
 }
 
 .btn-popup-close {
-  margin-right: 11px;
+  margin-left: 588px;
+}
+
+.btn-popup-close-map {
+  margin-left: 912px;
+}
+
+.btn-popup-close-cart {
+  margin-left: 588px;
 }
 
 /*
@@ -2701,6 +2747,8 @@ div .price-selection {
 */
 
 .modal-map {
+  display: grid;
+  grid-template-rows: 18px 21px 410px;
   width: 943px;
   height: 449px;
   top: 120px;
@@ -2708,21 +2756,24 @@ div .price-selection {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.modal-map img {
-  display: block;
-}
-
 .modal-map iframe {
   border: none;
 }
 
-.decoration-modal-map {
+.decoration-map {
   width: 943px;
   height: 7px;
   background-color: var(--basic-red);
 }
 
+.google-map {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
 .modal-item-in-cart {
+  display: grid;
+  grid-template-rows: 18px 21px 131px 112px;
   width: 620px;
   height: 282px;
   top: 120px;
@@ -2737,15 +2788,18 @@ div .price-selection {
 }
 
 .decoration-cart {
-  display: flex;
+  display: grid;
+  grid-template-rows: 37px 38px 37px;
+  grid-template-columns: 306px 314px;
   width: 620px;
   height: 112px;
   background-color: #f4f4f4;
+  
 }
 
 .mark {
-  display: flex;
-  align-self: center;
+  display: grid;
+  grid-template-columns: 147px 473px;
 }
   
 .in-cart {
@@ -2753,13 +2807,20 @@ div .price-selection {
   line-height: 30px;
   color: #000000;
   font-weight: 700;
+  margin-top: 36px;
+  margin-left: 28px;
 }
 
 .mark-item-in-cart {
   margin-left: 81px;
+  margin-top: 16px;
 }
 
 .btn-cart-checkout {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
@@ -2771,11 +2832,14 @@ div .price-selection {
 
   background-color: var(--basic-red);
   border:none;
-
   margin-left: 114px;
 }
 
 .btn-continue-shopping {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -2787,8 +2851,7 @@ div .price-selection {
 
   background-color: var(--white);
   border:none;
-
-  margin-right: 114px;
+  margin-left: 10px;
 }
   
   
