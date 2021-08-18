@@ -802,22 +802,25 @@ opacity: 50%;
 /* ----------------------------------- */
 
 .slider-man {
+  /*
   display: grid;
-
-  grid-column-start: 2;
-  grid-column-end: 4;
-
-  grid-row-start: 2;
-  grid-row-end: 4;
-
   grid-template-columns: 1fr;
   grid-template-rows: 104px 58px 104px;
+  justify-content: space-between;
+  */
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  
 
-  background-image: url(/img/man-with-tool.jpg);
+ 
   width: 620px;
   height: 266px;
+}
 
-  justify-content: space-between;
+.slider-man-slide1 {
+  background-image: url(/img/man-with-tool.jpg);
 }
 
 .slider-man-header {
@@ -2853,5 +2856,3 @@ div .price-selection {
   border:none;
   margin-left: 10px;
 }
-  
-  

@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="../css/normalize.css" rel="stylesheet" >
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
 </head>
 
@@ -136,22 +137,42 @@
         </div>  
   
         <div class="slider-man">
-          <div>
-            <div class="slider-man-header">
-              Перфораторы
+
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+
+              <!-- slider 1 -->
+              <div class="swiper-slide slider-man-slide1">
+                <div class="slider-man-header">
+                  Перфораторы
+                </div>
+                <p class="slider-man-subheader">
+                  Настоящие мужские игрушки
+                </p>
+                <button class="btn-red-open">открыть каталог</button>
+              </div>
+              <!-- slide 2 -->
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+              </div>
+              <!-- slide 3 -->
+              <div class="swiper-slide">Slide 3</div>
             </div>
-            <p class="slider-man-subheader">Настоящие мужские игрушки</p>
+
+            <!-- buttons -->
+            <div class="swiper-button-next">
+            </div>
+            <div class="swiper-button-prev">    
+            </div>          
+
+            <!-- slider paging -->
+            <div class="swiper-pagination"></div>
+
           </div>
 
-          <div class="arrow-slider">
-            <img class="arrow-slider-next" src="../img/icon-right.svg" width="22" height="44" alt="icon:arrow-next">
-            <img class="arrow-slider-prew" src="../img/icon-left.svg" width="22" height="44" alt="icon:arrow-prev"> 
-          </div>
-
-          <div>
-            <button class="btn-red-open">открыть каталог</button>
-          </div>
-         </div>
+        </div>
 
       </section> 
   
@@ -442,9 +463,9 @@
     </section>
  
   </div>
-
+  <script src="../js/swiper-bundle.min.js"></script>
   <script src="../js/index.js"></script> 
-
+ 
 </body>
 
 </html>
